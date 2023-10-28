@@ -1,0 +1,28 @@
+.resume {
+    .section-container {
+        margin-bottom: 20px; 
+
+        .skill-container {
+            display: flex;
+            flex-flow: wrap;
+
+            .skill {
+                background: rgba(var(--card-rgb), 0.5);
+                border: 1px solid rgba(var(--card-border-rgb), 0.15);
+                border-radius: 6px;
+                margin: 5px;
+                padding: 8px;
+    
+                &:hover {
+                    background: rgba(var(--card-rgb), 0.8);
+                    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+                }
+            }
+        }
+        
+        .job-description {
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+}

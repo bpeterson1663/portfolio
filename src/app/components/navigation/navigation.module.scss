@@ -21,7 +21,7 @@
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
-              background: rgba(var(--card-rgb), 0.1);
+              background: rgba(var(--card-rgb), 0.3);
               border: 1px solid rgba(var(--card-border-rgb), 0.15);
             }
           
