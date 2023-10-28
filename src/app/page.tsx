@@ -7,35 +7,10 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <h1 className={styles.code}>Brady Peterson</h1>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
       </div>
 
       <div className={styles.center}>
-      <h2 className={styles.code}>Web Developer</h2>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <h2 className={styles.code}>Web Developer</h2>
       </div>
 
       <div className={styles.grid}>
@@ -43,21 +18,21 @@ export default function Home() {
           <h2>
             Blog <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>My thoughts and ideas.</p>
         </Link>
 
         <Link href="/projects" className={styles.card}>
           <h2>
             Projects <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>Projects I work on during my free time.</p>
         </Link>
 
         <Link href="/resume" className={styles.card}>
           <h2>
             Resume <span>-&gt;</span>
           </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+          <p>View my skills and career history.</p>
         </Link>
       </div>
     </main>
