@@ -10,7 +10,7 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <h2 className={styles.code}>Web Developer</h2>
+        <h2 className={styles.code}>Software Engineer</h2>
       </div>
 
       <div className={styles.grid}>
