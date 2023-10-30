@@ -1,6 +1,14 @@
 .resume {
+   
     .section-container {
         margin-bottom: 20px; 
+
+        .contact-info {
+            
+            .link {
+                text-decoration: underline;
+            }
+        }
 
         .skill-container {
             display: flex;

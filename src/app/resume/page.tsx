@@ -7,10 +7,11 @@ export default function Page() {
   return (
     <div className={styles.resume}>
       <div className={styles['section-container']}>
-        <h2>Brady J. Peterson</h2>
         <div className={styles['contact-info']}>
-          (952) 250-1663 bpeterson1663@gmail.com
-          <Link target="_blank" href="https://github.com/bpeterson1663">
+          <h2>Brady J. Peterson</h2>
+          <span>(952) 250-1663</span>
+          <span>bpeterson1663@gmail.com</span>
+          <Link className={styles.link} target="_blank" href="https://github.com/bpeterson1663">
             Github
           </Link>
         </div>
