@@ -30,9 +30,13 @@ export default function Page() {
       </div>
       <div className={styles['section-container']}>
         <h2>Experience</h2>
-        <div className={styles['job-description']}>
+        <div className={styles.section}>
           <h3>When I Work</h3>
-          <h4>Full Stack Engineer -- August 2021 – October 2023</h4>
+          <div className={styles.header}>
+            <h4>Full Stack Engineer</h4>
+            <span>August 2021 – October 2023</span>
+          </div>
+
           <ul>
             <li>
               Demonstrated ability to learn new languages by quickly becoming familiar with our backend services written
@@ -52,9 +56,13 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles['job-description']}>
+        <div className={styles.section}>
           <h3>Calabrio</h3>
-          <h4>Software Engineer – UI -- January 2019 – August 2021</h4>
+          <div className={styles.header}>
+            <h4>Software Engineer – UI</h4>
+            <span>January 2019 – August 2021</span>
+          </div>
+
           <ul>
             <li>
               Researched and implemented Cypress into our workflow and CI pipeline to help increase code coverage on our
@@ -84,7 +92,11 @@ export default function Page() {
               Jenkins, Azure DevOps
             </li>
           </ul>
-          <h4>Associate Software Engineer – UI -- July 2017 – January 2019</h4>
+
+          <div className={styles.header}>
+            <h4>Associate Software Engineer – UI</h4>
+            <span>July 2017 – January 2019</span>
+          </div>
           <ul>
             <li>
               Provided front end technical support to the Calabrio One products, specifically the Workforce Management
@@ -103,9 +115,13 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles['job-description']}>
+        <div className={styles.section}>
           <h3>Fourcubed</h3>
-          <h4>Front End Developer/Contractor -- July 2016 – January 2018</h4>
+          <div className={styles.header}>
+            <h4>Front End Developer/Contractor</h4>
+            <span>July 2016 – January 2018</span>
+          </div>
+
           <ul>
             <li>
               Expanded beyond Front End Development by assisting in Back End Development for all products and learning
@@ -129,9 +145,141 @@ export default function Page() {
             </li>
           </ul>
         </div>
+        <div className={styles.section}>
+          <h3>Prime Digital Academy</h3>
+          <div className={styles.header}>
+            <h4>Full Stack Software Development Student</h4>
+            <span>January 2016 – May 2016</span>
+          </div>
+          <ul>
+            <li>
+              Designed and developed a MEAN Stack application that addresses the problem of out-of-date wine menus and
+              inaccurate inventory costs in the restaurant and hospitality industry.
+            </li>
+            <li>
+              Solved the issue by creating functionality in which beverage professionals can quickly and efficiently
+              add, update and delete inventory to maintain an accurate wine list and cost of inventory on hand.
+            </li>
+            <li>
+              Worked on a team of five developers for Mango Mentors, an organization that helps young professionals
+              start the networking process with mentors in order to achieve their goals.
+            </li>
+            <li>
+              Solved the issue of how to start the networking process by creating an application that users can easily
+              post short success stories to a global or specific community feed in which others can comment and reach
+              out for additional support.
+            </li>
+            <li>
+              <strong>Technologies Used:</strong> MongoDB, Express.js, AngularJS, Node.js, Angular Material, Passport.js
+            </li>
+          </ul>
+        </div>
+        <div className={styles.section}>
+          <h3>The Salt Cellar</h3>
+          <div className={styles.header}>
+            <h4>Restaurant Manager</h4>
+            <span>January 2015 – June 2015</span>
+          </div>
+          <ul>
+            <li>
+              Demonstrated passion for fine dining by improving the guest’s dining experience, developing consistency
+              among service standards and constantly evaluating and improving staff performance.
+            </li>
+            <li>Analyzed opportunities to decrease labor cost by 10% to reach projected goals.</li>
+            <li>
+              Illustrated excellent organizational skills by maintaining and organizing a beverage inventory of $50,000
+              to keep liquor costs below projected goal of 20%.
+            </li>
+          </ul>
+        </div>
+        <div className={styles.section}>
+          <h3>Interlachen Country Club</h3>
+          <div className={styles.header}>
+            <h4>Food and Beverage Manager</h4>
+            <span>July 2014 – January 2015</span>
+          </div>
+          <ul>
+            <li>
+              Demonstrated excellent customer service skills by maintaining positive relationships with members and
+              their guests while constantly trying to improve their experience.
+            </li>
+            <li>
+              Demonstrated strong leadership skills by monitoring and evaluating staff performance while providing them
+              with the tools and training they need to succeed.
+            </li>
+            <li>
+              Illustrated superb organizational skills by maintaining a beverage inventory of $120,000 and developing an
+              outstanding wine, beer, and cocktail list.
+            </li>
+          </ul>
+
+          <div className={styles.header}>
+            <h4>Beverage Manager and Server</h4>
+            <span>May 2011 – June 2014</span>
+          </div>
+          <ul>
+            <li>
+              Assisted Food and Beverage Manager in creating a memorable dining experience by anticipating and exceeding
+              the expectations of our members and guests.
+            </li>
+            <li>
+              Demonstrated strong leadership skills by monitoring, evaluating and enhancing bartender’s performance and
+              providing them with the tools and training they needed to succeed.
+            </li>
+            <li>Demonstrated teamwork skills by always willing to help out in all departments whenever needed.</li>
+          </ul>
+        </div>
       </div>
+
       <div className={styles['section-container']}>
         <h2>Education</h2>
+        <div className={styles.section}>
+          <h3>Continuing Self-Learning</h3>
+          <div className={styles.header}>
+            <h4>Online Learning – http://www.zerotomastery.io</h4>
+            <span>March 2021 – Present</span>
+          </div>
+          <ul>
+            <li>Go Programming (Golang): The Complete Developer’s Guide</li>
+            <li>Typescript: The Complete Developer’s Guide</li>
+            <li>Complete SQL + Databases Bootcamp</li>
+            <li>Complete React Developer (with Redux, Hooks, GraphQL)</li>
+          </ul>
+        </div>
+        <div className={styles.section}>
+          <h3>Prime Digital Academy</h3>
+          <div className={styles.header}>
+            <h4>Full-Stack Software Engineering Certification</h4>
+            <span>January 2016 – May 2016</span>
+          </div>
+          <ul>
+            <li>
+              Prime Digital Academy is an 18-week, intensive program designed to prepare students for employment in the
+              software development field.
+            </li>
+            <li>
+              The program focuses on the JavaScript-Based MEAN Stack (MongoDB, Express.js, AngularJS, Node.js) with a
+              strong focus on team-based projects and real-world business needs.
+            </li>
+          </ul>
+        </div>
+        <div className={styles.section}>
+          <h3>University of Wisconsin - Stout</h3>
+          <div className={styles.header}>
+            <h4>Bachelor of Science in Golf Enterprise Management</h4> <span>September 2008 – May 2011</span>
+          </div>
+          <ul>
+            <li>Minor in Business Administration</li>
+            <li>Magna Cum Laude-GPA: 3.8</li>
+          </ul>
+        </div>
+        <div className={styles.section}>
+          <h3>Milwaukee School of Engineering</h3>
+          <div className={styles.header}>
+            <h4>Generals - Management Information Systems</h4>
+            <span>September 2007 – May 2008</span>
+          </div>
+        </div>
       </div>
     </div>
   )
