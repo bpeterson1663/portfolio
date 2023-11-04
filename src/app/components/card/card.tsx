@@ -1,6 +1,10 @@
 import { PropsWithChildren } from 'react'
 import styles from './card.module.scss'
 
-export default function Card({ children }: PropsWithChildren) {
-  return <div className={styles['card-container']}>{children}</div>
+interface Props {
+  className?: string
+}
+
+export default function Card({ children, className }: PropsWithChildren<Props>) {
+  return <div className={`${styles['card-container']} ${className}`}>{children}</div>
 }

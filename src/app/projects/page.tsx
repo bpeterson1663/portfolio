@@ -1,17 +1,20 @@
-import Image from 'next/image'
-import Card from '../components/card/card'
 import Grid from '../components/grid/grid'
+import { Project } from './model'
+import { ProjectCard } from './components/project-card'
 
 export default function Page() {
+  const PROJECTS: Project[] = [{
+    id: "1",
+    title: "Wine Journal",
+    description: "An online journal to store your tasting notes about wine",
+    imageUrl: "/static/wine-journal.png",
+    url: "https://wine-journal-711ef.web.app/"
+  }]
+
   return (
     <div>
       <Grid>
-        <Card>
-          <h2>Title</h2>
-          <p>Lorem ipsum description</p>
-          <Image alt="Default" src="/static/wine-tasting.jpg" width={300} height={300} />
-        </Card>
-        <Card />
+        {PROJECTS.map(project => <ProjectCard key={project.id} {...project} /> )}
       </Grid>
     </div>
   )

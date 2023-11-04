@@ -3,6 +3,6 @@ export interface Project {
   title: string
   description: string
   url?: string
-  project_repo: string
-  screenshot: string
+  projectRepo?: string
+  imageUrl: string
 }
