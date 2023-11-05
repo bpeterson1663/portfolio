@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from '@/app/projects/components/project-card.module.scss'
 
 export function ProjectCard({title, description, imageUrl, projectRepo, url}: Project) {
-    console.log(url)
+
     return (
         <Card className={styles['project-card']}>
         <h2>{title}</h2>
