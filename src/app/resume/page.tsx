@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from './resume.module.scss'
-import { SKILLS } from './constants'
-import Grid from '../components/grid/grid'
+import { SKILLS } from '../components/skill-pills/skills'
+import SkillPills from '../components/skill-pills/skill-pills'
 
 export default function Page() {
   return (
@@ -18,15 +18,7 @@ export default function Page() {
       </div>
       <div className={styles['section-container']}>
         <h2>Technical Skills</h2>
-        <div className={styles['skill-container']}>
-          {SKILLS.map((skill) => {
-            return (
-              <div className={styles['skill']} key={skill}>
-                {skill}
-              </div>
-            )
-          })}
-        </div>
+        <SkillPills skills={SKILLS} />
       </div>
       <div className={styles['section-container']}>
         <h2>Experience</h2>

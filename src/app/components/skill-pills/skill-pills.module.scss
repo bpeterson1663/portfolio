@@ -1,0 +1,19 @@
+.skill-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
+    .skill {
+        background: rgba(var(--card-rgb), 0.5);
+        border: 1px solid rgba(var(--card-border-rgb), 0.15);
+        border-radius: 6px;
+        margin: 5px;
+        padding: 8px;
+        font-size: 12px;
+
+        &:hover {
+            background: rgba(var(--card-rgb), 0.8);
+            border: 1px solid rgba(var(--card-border-rgb), 0.15);
+        }
+    }
+}

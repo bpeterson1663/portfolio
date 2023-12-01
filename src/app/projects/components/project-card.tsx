@@ -1,10 +1,13 @@
 import Image from 'next/image'
+import {SKILLS} from '../../components/skill-pills/skills'
 import Card from '@/app/components/card/card'
 import { Project } from '../model'
 import Link from 'next/link'
 import styles from '@/app/projects/components/project-card.module.scss'
+import SkillPills from '@/app/components/skill-pills/skill-pills'
 
-export function ProjectCard({ title, description, imageUrl, projectRepo, url }: Project) {
+export function ProjectCard({ title, description, imageUrl, projectRepo, url, skillIds }: Project) {
+  const skills = SKILLS.filter(skill => skillIds.includes(skill.id))
   return (
     <Card className={styles['project-card']}>
       <h2>{title}</h2>
@@ -20,6 +23,7 @@ export function ProjectCard({ title, description, imageUrl, projectRepo, url }: 
           {title}
         </Link>
       )}
+      <SkillPills skills={skills} />
     </Card>
   )
 }

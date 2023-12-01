@@ -4,5 +4,6 @@ export interface Project {
   description: string
   url?: string
   projectRepo?: string
-  imageUrl: string
+  imageUrl: string,
+  skillIds: number[]
 }
