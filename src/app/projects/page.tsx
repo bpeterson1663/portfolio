@@ -10,7 +10,7 @@ export default function Page() {
       description: 'An online journal to store your tasting notes about wine.',
       imageUrl: '/static/wine-journal.png',
       url: 'https://wine-journal-711ef.web.app/',
-      skillIds: [2, 3, 9, 18, 19, 24]
+      skillIds: [2, 3, 9, 18, 19, 24],
     },
     {
       id: '2',
@@ -18,7 +18,7 @@ export default function Page() {
       description: 'A pixel art editor program created in Golang.',
       imageUrl: '/static/pixl-art-editor.png',
       projectRepo: 'https://github.com/bpeterson1663/go-pixl',
-      skillIds: [13]
+      skillIds: [13],
     },
   ]
 
