@@ -7,12 +7,9 @@ interface Params {
   }
 }
 
-export function getPost(slug: string) {
-  return posts.find((post) => post.slug === slug)
-}
 
 export default function Slug({ params }: Params) {
-  const post = getPost(params.slug)
+  const post = posts.find((post) => post.slug === params.slug)
 
   if (!post) {
     return
