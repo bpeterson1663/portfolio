@@ -8,21 +8,19 @@ interface Params {
 }
 
 export function getPost(slug: string) {
-  return posts.find(post => post.slug === slug)
+  return posts.find((post) => post.slug === slug)
 }
 
-export default function Slug({params}: Params) {
-    const post = getPost(params.slug)
+export default function Slug({ params }: Params) {
+  const post = getPost(params.slug)
 
-    if (!post) {
-      return
-    }
-    
-    return (
-      <div>
-        <Suspense fallback={<div>Loading...</div>}>
-          { post?.page}
-        </Suspense>
-      </div>
-    )
+  if (!post) {
+    return
+  }
+
+  return (
+    <div>
+      <Suspense fallback={<div>Loading...</div>}>{post?.page}</Suspense>
+    </div>
+  )
 }
