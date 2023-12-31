@@ -1,3 +1,16 @@
+import { Fragment } from "react"
+import Grid from "../components/grid/grid"
+import { posts } from "./posts"
+import BlogCard from "./components/blog-card"
+
 export default function Page() {
-  return <div>content goes here</div>
+  return (
+    <Grid>
+      {posts.map(post => (
+        <Fragment key={post.slug}>
+          <BlogCard {...post} />
+        </Fragment>
+      ))}
+    </Grid>
+  )
 }
