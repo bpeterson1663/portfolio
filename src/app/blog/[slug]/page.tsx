@@ -7,7 +7,6 @@ interface Params {
   }
 }
 
-
 export default function Slug({ params }: Params) {
   const post = posts.find((post) => post.slug === params.slug)
 

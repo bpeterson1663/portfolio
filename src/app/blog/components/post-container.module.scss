@@ -5,10 +5,13 @@
     flex-direction: column;
 
     p {
-        margin-top: 10px;  
+        margin-top: 10px; 
+        text-indent: 2em; 
+        line-height: 20px;
     }
-    
+
     a {
         text-decoration: underline;
+        margin-top: 10px;
     }
 }

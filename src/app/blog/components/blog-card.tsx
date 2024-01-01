@@ -1,6 +1,6 @@
-import Card from '@/app/components/card/card'
-import Link from 'next/link'
+import CardLink from '@/app/components/card-link/card-link'
 import { getDate } from '@/app/utils/date'
+import styles from '@/app/blog/components/blog-card.module.scss'
 
 interface Props {
   slug: string
@@ -11,12 +11,10 @@ interface Props {
 
 export default function BlogCard({ title, date, summary, slug }: Props) {
   return (
-    <Link href={`/blog/${slug}`}>
-      <Card>
-        <h2>{title}</h2>
-        <span>{getDate(date)}</span>
-        <p>{summary}</p>
-      </Card>
-    </Link>
+    <CardLink href={`/blog/${slug}`} className={styles['blog-card']}>
+      <h2>{title}</h2>
+      <span>{getDate(date)}</span>
+      <p>{summary}</p>
+    </CardLink>
   )
 }
