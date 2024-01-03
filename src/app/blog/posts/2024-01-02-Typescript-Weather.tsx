@@ -9,7 +9,7 @@ export default function Post() {
       <h2>Typescript Weather Project - Finishing the CLI</h2>
       <h3>{getDate('2024-01-02')}</h3>
       <p>
-        Wrapped up the CLI portion of the weather project. Running the following command will start the program:
+        Wrapped up the CLI portion of the weather project. Running the following command will start the program:{' '}
         <code>pnpm run weather &rdquo;CITY_NAME&rdquo;</code>
         The program will make a request to <code>https://api.open-meteo.com/v1/forecast</code> and output the following
         code:{' '}
