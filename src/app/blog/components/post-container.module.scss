@@ -10,6 +10,25 @@
         line-height: 20px;
     }
 
+    pre {
+        display: flex;
+        width: 100%;
+        margin: 10px;
+        code {
+            font-family: monospace;
+            font-size: 1rem;
+            line-height: 100%;
+            background-color: rgba(var(--card-rgb), 0.6);
+            padding: 10px;
+            letter-spacing: -0.05em;
+            word-break: normal;
+            border-radius: 5px;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
+    }
+
     a {
         text-decoration: underline;
         margin-top: 10px;

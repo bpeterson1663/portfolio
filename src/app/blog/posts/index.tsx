@@ -1,5 +1,6 @@
 import P20231231RoadTo100 from './2023-12-31-Road-To-100'
 import P20240101TypescriptWeather from './2024-01-01-Typescript-Weather'
+import P20240102TypescriptWeather from './2024-01-02-Typescript-Weather'
 
 export const posts = [
   {
@@ -15,5 +16,12 @@ export const posts = [
     date: new Date('January 01, 2024'),
     summary: 'Small Typescript weather project that takes a location and returns the weather.',
     page: <P20240101TypescriptWeather />,
+  },
+  {
+    slug: '2024-01-02-typescript-weather',
+    title: 'Typescript Weather Project - Final CLI',
+    date: new Date('January 02, 2024'),
+    summary: 'The final code changes for the CLI.',
+    page: <P20240102TypescriptWeather />,
   },
 ]
