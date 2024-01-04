@@ -6,7 +6,7 @@ import { getDate } from '@/app/utils/date'
 export default function Post() {
   return (
     <PostContainer>
-      <h2>Typescript Weather Project - Finishing the CLI</h2>
+      <h2>Finishing Weather CLI Project</h2>
       <h3>{getDate('2024-01-02')}</h3>
       <p>
         Wrapped up the CLI portion of the weather project. Running the following command will start the program:{' '}

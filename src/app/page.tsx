@@ -18,7 +18,7 @@ export default function Home() {
           <h2>
             Blog <span>-&gt;</span>
           </h2>
-          <p>My thoughts and ideas.</p>
+          <p>Less of a blog, more of a journal.</p>
         </Link>
 
         <Link href="/projects" className={styles.card}>

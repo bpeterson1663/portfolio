@@ -4,6 +4,8 @@ import P20240102TypescriptWeather from './2024-01-02-Typescript-Weather'
 import P20240102Workout from './2024-01-02-Workout'
 import P20231229Workout from './2023-12-29-Workout'
 import P20231230Workout from './2023-12-30-Workout'
+import P20240103TypescriptWeatherUI from './2024-01-03-Typescript-Weather-UI'
+import P20240103Workout from './2024-01-03-Workout'
 
 export const posts = [
   {
@@ -36,7 +38,7 @@ export const posts = [
   },
   {
     slug: '2024-01-02-typescript-weather',
-    title: 'Typescript Weather Project - Final CLI',
+    title: 'Finishing Weather CLI Project',
     date: new Date('January 02, 2024'),
     summary: 'The final code changes for the CLI.',
     page: <P20240102TypescriptWeather />,
@@ -47,5 +49,19 @@ export const posts = [
     date: new Date('January 02, 2024'),
     summary: 'Leg Day',
     page: <P20240102Workout />,
+  },
+  {
+    slug: '2024-01-03-typescript-weather-ui',
+    title: 'Typescript Weather UI',
+    date: new Date('January 03, 2024'),
+    summary: 'Starting work on the UI portion of the weather app.',
+    page: <P20240103TypescriptWeatherUI />,
+  },
+  {
+    slug: '2024-01-03-workout',
+    title: 'Workout',
+    date: new Date('January 03, 2024'),
+    summary: 'Chest and Back Day',
+    page: <P20240103Workout />,
   },
 ].sort((a, b) => b.date.getTime() - a.date.getTime())
