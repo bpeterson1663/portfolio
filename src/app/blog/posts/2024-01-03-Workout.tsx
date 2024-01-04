@@ -21,13 +21,7 @@ export default function Post() {
         <Row name="Incline Fly" weight="25" rep="15" sets={SETS} />
         <Row name="Chest Press" weight="40" rep="15" sets={SETS} />
         <Row name="Dips" weight="--" rep="15" sets={SETS} />
-        <Row
-          name="Overhead Press"
-          weight="30"
-          rep="15"
-          sets={SETS}
-          notes="increased the weight to 30 on the last set"
-        />
+        <Row name="Overhead Press" weight="30" rep="15" sets={SETS} />
         <Row name="Row" weight="22.5" rep="15" sets={SETS} />
         <Row name="Reverse Grip Row" weight="22.5" rep="15" sets={SETS} />
       </Table>
