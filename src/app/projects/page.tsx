@@ -24,7 +24,7 @@ export default function Page() {
 
   return (
     <div>
-      <Grid>
+      <Grid columns={3}>
         {PROJECTS.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
