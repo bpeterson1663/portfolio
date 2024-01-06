@@ -1,13 +1,16 @@
 import P20231231RoadTo100 from './2023-12-31-Road-To-100'
 import P20240101TypescriptWeather from './2024-01-01-Typescript-Weather'
 import P20240102TypescriptWeather from './2024-01-02-Typescript-Weather'
+import P20240103TypescriptWeatherUI from './2024-01-03-Typescript-Weather-UI'
+import P20240104TypescriptWeatherUI from './2024-01-04-Typescript-Weather-UI'
+import P20240105ypescriptWeatherUI from './2024-01-05-Typescript-Weather-UI'
+
 import P20240102Workout from './2024-01-02-Workout'
 import P20231229Workout from './2023-12-29-Workout'
 import P20231230Workout from './2023-12-30-Workout'
-import P20240103TypescriptWeatherUI from './2024-01-03-Typescript-Weather-UI'
 import P20240103Workout from './2024-01-03-Workout'
 import P20240104Workout from './2024-01-04-Workout'
-import P20240104TypescriptWeatherUI from './2024-01-04-Typescript-Weather-UI'
+import P20240105Workout from './2024-01-05-Workout'
 
 export const posts = [
   {
@@ -80,4 +83,19 @@ export const posts = [
     summary: 'Finishing up the UI portion',
     page: <P20240104TypescriptWeatherUI />,
   },
+  {
+    slug: '2024-01-05-workout',
+    title: 'Workout',
+    date: new Date('January 05, 2024'),
+    summary: 'Shoulders',
+    page: <P20240105Workout />,
+  },
+  {
+    slug: "2024-01-05-typescript-weather-ui",
+    title: "Typescript Weather UI",
+    date: new Date("January 05, 2024"),
+    summary: "Adding test coverage",
+    page: <P20240105ypescriptWeatherUI />
+  }
+  
 ].sort((a, b) => b.date.getTime() - a.date.getTime())

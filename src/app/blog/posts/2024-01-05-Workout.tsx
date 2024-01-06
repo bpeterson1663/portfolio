@@ -7,17 +7,16 @@ export default function Post() {
 
   return (
     <PostContainer>
-      <h2>Sholders</h2>
-      <h3>{getDate('2023-12-29')}</h3>
+      <h2>Shoulders</h2>
+      <h3>{getDate('2024-01-05')}</h3>
       <p>
-        First workout in this new program. Shoulder Day. Workout took about 30 minutes to complete. Weights were pretty
-        challenging but managed. Could increase the weights in the last few excercises.{' '}
+        Shoulder Day. Increased the weight in a couple of excercises since last week. Overall workout took about 30 minutes, with no rest in between excercises and 2 minutes of rest between sets.
       </p>
       <Table sets={SETS}>
-        <Row name="Shoulder Press" weight="25" rep="15" sets={SETS} />
-        <Row name="Front Raises" weight="12.5" rep="15" sets={SETS} />
+        <Row name="Shoulder Press" weight="30" rep="15" sets={SETS} />
+        <Row name="Front Raises" weight="15" rep="15" sets={SETS} />
         <Row name="Lateral Raises" weight="10" rep="15" sets={SETS} />
-        <Row name="Shrugs" weight="25" rep="15" sets={SETS} />
+        <Row name="Shrugs" weight="30" rep="15" sets={SETS} />
         <Row name="Upright Row" weight="20" rep="15" sets={SETS} />
         <Row name="Rear Delt Flys" weight="10" rep="15" sets={SETS} />
       </Table>
