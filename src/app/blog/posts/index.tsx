@@ -11,6 +11,8 @@ import P20231230Workout from './2023-12-30-Workout'
 import P20240103Workout from './2024-01-03-Workout'
 import P20240104Workout from './2024-01-04-Workout'
 import P20240105Workout from './2024-01-05-Workout'
+import P20240106Workout from './2024-01-06-Workout'
+import P20240108Workout from './2024-01-08-Workout'
 
 export const posts = [
   {
@@ -91,11 +93,24 @@ export const posts = [
     page: <P20240105Workout />,
   },
   {
-    slug: "2024-01-05-typescript-weather-ui",
-    title: "Typescript Weather UI",
-    date: new Date("January 05, 2024"),
-    summary: "Adding test coverage",
-    page: <P20240105ypescriptWeatherUI />
-  }
-  
+    slug: '2024-01-05-typescript-weather-ui',
+    title: 'Typescript Weather UI',
+    date: new Date('January 05, 2024'),
+    summary: 'Adding test coverage',
+    page: <P20240105ypescriptWeatherUI />,
+  },
+  {
+    slug: '2024-01-05-workout',
+    title: 'Workout',
+    date: new Date('January 06, 2024'),
+    summary: 'Chest and Back',
+    page: <P20240106Workout />,
+  },
+  {
+    slug: '2024-01-08-workout',
+    title: 'Workout',
+    date: new Date('January 08, 2024'),
+    summary: 'Legs',
+    page: <P20240108Workout />,
+  },
 ].sort((a, b) => b.date.getTime() - a.date.getTime())
