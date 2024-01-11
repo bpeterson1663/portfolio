@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import PostContainer from '../components/post-container'
+import PostContainer from '../../components/post-container'
 
 import { getDate } from '@/app/utils/date'
 

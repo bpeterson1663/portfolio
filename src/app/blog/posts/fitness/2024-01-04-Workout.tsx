@@ -1,4 +1,4 @@
-import PostContainer from '../components/post-container'
+import PostContainer from '../../components/post-container'
 import { Table, Row } from '@/app/components/workout/workout'
 import { getDate } from '@/app/utils/date'
 
