@@ -9,8 +9,6 @@ export default function Page() {
       <div className={styles['section-container']}>
         <div className={styles['contact-info']}>
           <h2>Brady J. Peterson</h2>
-          <span>(952) 250-1663</span>
-          <span>bpeterson1663@gmail.com</span>
           <Link className={styles.link} target="_blank" href="https://github.com/bpeterson1663">
             Github
           </Link>
@@ -24,6 +22,31 @@ export default function Page() {
         <h2>Experience</h2>
         <div className={styles.section}>
           <h3>When I Work</h3>
+          <div className={styles.header}>
+            <h4>Senior Full Stack Engineer</h4>
+            <span>October 2023 – Present</span>
+          </div>
+
+          <ul>
+            <li>
+              Provided support to other developers, QA engineers and Customer Support staff by investigating and troubleshoot issues as well as providing feedback through merge requests.
+            </li>
+            <li>
+              Demonstrated technical skills in React and Golang by building UI components and APIs for our new Payroll product.
+            </li>
+            <li>
+              Worked closely with UX, Product and QA to provide feedback when going over new features as well as planning and execution.
+            </li>
+            <li>
+              Demonstrated strong advocacy for coding standards and best practices by providing feedback through code reviews and working on development plans for new features including API documentation, database access patterns, schema designs and other implementation details.
+            </li>
+            <li>
+              Proven proficiency in troubleshooting skills by identifying and solving complex problems around various topics such as time zone/DST, calculating overtime and blended position rates, and various performance issues.
+            </li>
+            <li>
+              <strong>Technologies Used:</strong>  React, TypeScript, PHP, Golang, React Testing Library
+            </li>
+          </ul>
           <div className={styles.header}>
             <h4>Full Stack Engineer</h4>
             <span>August 2021 – October 2023</span>
@@ -44,7 +67,7 @@ export default function Page() {
               shoot and resolve any issues our customers may have experienced.
             </li>
             <li>
-              <strong>Technologies Used:</strong> React, TypeScript, PHP, Golang, Kubernetes, React Testing Library
+              <strong>Technologies Used:</strong>  React, TypeScript, PHP, Golang, React Testing Library
             </li>
           </ul>
         </div>
@@ -232,9 +255,9 @@ export default function Page() {
             <span>March 2021 – Present</span>
           </div>
           <ul>
-            <li>Go Programming (Golang): The Complete Developer’s Guide</li>
+            <li>Complete Python Developer</li>
+            <li>Python for Business Data Analytics & Intelligence</li>
             <li>Typescript: The Complete Developer’s Guide</li>
-            <li>Complete SQL + Databases Bootcamp</li>
             <li>Complete React Developer (with Redux, Hooks, GraphQL)</li>
           </ul>
         </div>
