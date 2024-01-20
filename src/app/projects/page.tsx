@@ -20,6 +20,23 @@ export default function Page() {
       projectRepo: 'https://github.com/bpeterson1663/go-pixl',
       skillIds: [13],
     },
+    {
+      id: '3',
+      title: 'Pyton Web Server',
+      description: 'A protfolio project using python. Project uses Flask and use Python Anywhere to host the project.',
+      imageUrl: '/static/python-web-server.png',
+      url: 'https://bpeterson1663.pythonanywhere.com/',
+      projectRepo: 'https://github.com/bpeterson1663/python-web-server',
+      skillIds: [25, 22, 23],
+    },
+    {
+      id: '4',
+      title: 'Weather App',
+      description: 'A weather project using typescript.',
+      imageUrl: '/static/typescript-weather.png',
+      projectRepo: 'https://github.com/bpeterson1663/weather-ui',
+      skillIds: [3, 23],
+    },
   ]
 
   return (

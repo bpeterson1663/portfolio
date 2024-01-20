@@ -125,4 +125,9 @@ export const SKILLS: Skill[] = [
     name: 'Mantine',
     url: 'https://mantine.dev/',
   },
+  {
+    id: 25,
+    name: 'Python',
+    url: 'https://www.python.org/',
+  },
 ]
