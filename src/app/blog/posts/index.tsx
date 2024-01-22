@@ -16,9 +16,9 @@ import P20240105Workout from './fitness/2024-01-05-Workout'
 import P20240106Workout from './fitness/2024-01-06-Workout'
 import P20240108Workout from './fitness/2024-01-08-Workout'
 
-type Category = 'fitness' | 'development'
+export type Category = 'fitness' | 'development'
 
-interface Post {
+export interface Post {
   category: Category
   slug: string
   title: string
@@ -126,7 +126,7 @@ export const posts: Post[] = [
   },
   {
     category: 'fitness',
-    slug: '2024-01-05-workout',
+    slug: '2024-01-06-workout',
     title: 'Workout',
     date: new Date('January 06, 2024'),
     summary: 'Chest and Back',

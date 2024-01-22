@@ -29,22 +29,29 @@ export default function Page() {
 
           <ul>
             <li>
-              Provided support to other developers, QA engineers and Customer Support staff by investigating and troubleshoot issues as well as providing feedback through merge requests.
+              Provided support to other developers, QA engineers and Customer Support staff by investigating and
+              troubleshoot issues as well as providing feedback through merge requests.
             </li>
             <li>
-              Demonstrated technical skills in React and Golang by building UI components and APIs for our new Payroll product.
+              Demonstrated technical skills in React and Golang by building UI components and APIs for our new Payroll
+              product.
             </li>
             <li>
-              Worked closely with UX, Product and QA to provide feedback when going over new features as well as planning and execution.
+              Worked closely with UX, Product and QA to provide feedback when going over new features as well as
+              planning and execution.
             </li>
             <li>
-              Demonstrated strong advocacy for coding standards and best practices by providing feedback through code reviews and working on development plans for new features including API documentation, database access patterns, schema designs and other implementation details.
+              Demonstrated strong advocacy for coding standards and best practices by providing feedback through code
+              reviews and working on development plans for new features including API documentation, database access
+              patterns, schema designs and other implementation details.
             </li>
             <li>
-              Proven proficiency in troubleshooting skills by identifying and solving complex problems around various topics such as time zone/DST, calculating overtime and blended position rates, and various performance issues.
+              Proven proficiency in troubleshooting skills by identifying and solving complex problems around various
+              topics such as time zone/DST, calculating overtime and blended position rates, and various performance
+              issues.
             </li>
             <li>
-              <strong>Technologies Used:</strong>  React, TypeScript, PHP, Golang, React Testing Library
+              <strong>Technologies Used:</strong> React, TypeScript, PHP, Golang, React Testing Library
             </li>
           </ul>
           <div className={styles.header}>
@@ -67,7 +74,7 @@ export default function Page() {
               shoot and resolve any issues our customers may have experienced.
             </li>
             <li>
-              <strong>Technologies Used:</strong>  React, TypeScript, PHP, Golang, React Testing Library
+              <strong>Technologies Used:</strong> React, TypeScript, PHP, Golang, React Testing Library
             </li>
           </ul>
         </div>
