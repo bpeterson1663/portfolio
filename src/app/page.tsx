@@ -34,6 +34,12 @@ export default function Home() {
           </h2>
           <p>View my skills and career history.</p>
         </Link>
+        <Link href="/contact" className={styles.card}>
+          <h2>
+            Contact Me <span>-&gt;</span>
+          </h2>
+          <p>Send me a message.</p>
+        </Link>
       </div>
     </main>
   )
