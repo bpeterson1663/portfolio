@@ -17,6 +17,9 @@ export default function Navigation() {
         <Link href="/resume" className={styles['nav-item']}>
           Resume
         </Link>
+        <Link href="/contact" className={styles['nav-item']}>
+          Contact Me
+        </Link>
       </div>
     </nav>
   )
