@@ -1,0 +1,43 @@
+.container {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h3 {
+        margin-bottom: 10px;
+    }
+}
+
+.contact-form {
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 400px;
+
+    input {
+        padding: 4px;
+        margin-bottom: 10px;
+        height: 30px;
+    }
+
+    textarea {
+        padding: 4px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        margin-bottom: 2px;
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        margin: 0 auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
