@@ -8,8 +8,11 @@ type Status = 'idle' | 'success' | 'error'
 export default function Page() {
   const form = useRef<HTMLFormElement>(null)
   const [status, setStatus] = useState<Status>('idle')
+  const [disabled, setDisabled] = useState(false)
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    setDisabled(true)
     if (form.current) {
       try {
         await emailjs.sendForm(
@@ -40,7 +43,7 @@ export default function Page() {
         <label htmlFor="message">Message</label>
         <textarea rows={4} name="message" id="message" />
 
-        <button type="submit">Send</button>
+        <button disabled={disabled} type="submit">Send</button>
       </form>
     </div>
   )
