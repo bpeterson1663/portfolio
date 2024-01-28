@@ -8,14 +8,19 @@ type Status = 'idle' | 'success' | 'error'
 export default function Page() {
   const form = useRef<HTMLFormElement>(null)
   const [status, setStatus] = useState<Status>('idle')
-
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (form.current) {
       try {
-        await emailjs.sendForm(process.env.EJS_SERVICE_ID!, process.env.EJS_TEMPLATE_CONTACT!, form.current, process.env.EJS_PUBLIC_KEY)
+        await emailjs.sendForm(
+          process.env.NEXT_PUBLIC_EJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EJS_TEMPLATE_CONTACT!,
+          form.current,
+          process.env.NEXT_PUBLIC_EJS_PUBLIC_KEY,
+        )
         setStatus('success')
       } catch (err) {
+        console.error({ err })
         setStatus('error')
       }
     }
