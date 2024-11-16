@@ -7,16 +7,7 @@ import P20240105TypescriptWeatherUI from './development/2024-01-05-Typescript-We
 import P20240110PythonWebScraper from './development/2024-01-10-Ptyhon-Web-Scraper'
 import P20240119PythonWebServer from './development/2024-01-19-Python-Web-Server'
 
-import P20240102Workout from './fitness/2024-01-02-Workout'
-import P20231229Workout from './fitness/2023-12-29-Workout'
-import P20231230Workout from './fitness/2023-12-30-Workout'
-import P20240103Workout from './fitness/2024-01-03-Workout'
-import P20240104Workout from './fitness/2024-01-04-Workout'
-import P20240105Workout from './fitness/2024-01-05-Workout'
-import P20240106Workout from './fitness/2024-01-06-Workout'
-import P20240108Workout from './fitness/2024-01-08-Workout'
-
-export type Category = 'fitness' | 'development'
+export type Category = 'development'
 
 export interface Post {
   category: Category
@@ -28,22 +19,6 @@ export interface Post {
 }
 
 export const posts: Post[] = [
-  {
-    category: 'fitness',
-    slug: '2023-12-29-workout',
-    title: 'Workout',
-    date: new Date('December 29, 2023'),
-    summary: 'Shoulder Day',
-    page: <P20231229Workout />,
-  },
-  {
-    category: 'fitness',
-    slug: '2023-12-30-workout',
-    title: 'Workout',
-    date: new Date('December 30, 2023'),
-    summary: 'Chest and Back',
-    page: <P20231230Workout />,
-  },
   {
     category: 'development',
     slug: '2023-12-31-100-commits',
@@ -69,36 +44,12 @@ export const posts: Post[] = [
     page: <P20240102TypescriptWeather />,
   },
   {
-    category: 'fitness',
-    slug: '2024-01-02-workout',
-    title: 'Workout',
-    date: new Date('January 02, 2024'),
-    summary: 'Leg Day',
-    page: <P20240102Workout />,
-  },
-  {
     category: 'development',
     slug: '2024-01-03-typescript-weather-ui',
     title: 'Typescript Weather UI',
     date: new Date('January 03, 2024'),
     summary: 'Starting work on the UI portion of the weather app.',
     page: <P20240103TypescriptWeatherUI />,
-  },
-  {
-    category: 'fitness',
-    slug: '2024-01-03-workout',
-    title: 'Workout',
-    date: new Date('January 03, 2024'),
-    summary: 'Chest and Back Day',
-    page: <P20240103Workout />,
-  },
-  {
-    category: 'fitness',
-    slug: '2024-01-04-workout',
-    title: 'Workout',
-    date: new Date('January 04, 2024'),
-    summary: 'Arms and Abs',
-    page: <P20240104Workout />,
   },
   {
     category: 'development',
@@ -109,36 +60,12 @@ export const posts: Post[] = [
     page: <P20240104TypescriptWeatherUI />,
   },
   {
-    category: 'fitness',
-    slug: '2024-01-05-workout',
-    title: 'Workout',
-    date: new Date('January 05, 2024'),
-    summary: 'Shoulders',
-    page: <P20240105Workout />,
-  },
-  {
     category: 'development',
     slug: '2024-01-05-typescript-weather-ui',
     title: 'Typescript Weather UI',
     date: new Date('January 05, 2024'),
     summary: 'Adding test coverage',
     page: <P20240105TypescriptWeatherUI />,
-  },
-  {
-    category: 'fitness',
-    slug: '2024-01-06-workout',
-    title: 'Workout',
-    date: new Date('January 06, 2024'),
-    summary: 'Chest and Back',
-    page: <P20240106Workout />,
-  },
-  {
-    category: 'fitness',
-    slug: '2024-01-08-workout',
-    title: 'Workout',
-    date: new Date('January 08, 2024'),
-    summary: 'Legs',
-    page: <P20240108Workout />,
   },
   {
     category: 'development',

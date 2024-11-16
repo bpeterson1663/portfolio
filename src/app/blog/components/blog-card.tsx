@@ -9,11 +9,10 @@ interface Props {
   summary: string
 }
 
-export default function BlogCard({ title, date, summary, slug }: Props) {
+export default function BlogCard({ title, summary, slug }: Props) {
   return (
     <CardLink href={`/blog/${slug}`} className={styles['blog-card']}>
       <h2>{title}</h2>
-      <span>{getDate(date)}</span>
       <p>{summary}</p>
     </CardLink>
   )
