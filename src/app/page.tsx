@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
 
@@ -14,13 +13,6 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <Link href="/blog" className={styles.card}>
-          <h2>
-            Blog <span>-&gt;</span>
-          </h2>
-          <p>Less of a blog, more of a journal.</p>
-        </Link>
-
         <Link href="/projects" className={styles.card}>
           <h2>
             Projects <span>-&gt;</span>

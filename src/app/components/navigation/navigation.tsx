@@ -8,9 +8,6 @@ export default function Navigation() {
         Home
       </Link>
       <div className={styles['nav-list-container']}>
-        <Link href="/blog" className={styles['nav-item']}>
-          Blog
-        </Link>
         <Link href="/projects" className={styles['nav-item']}>
           Projects
         </Link>
