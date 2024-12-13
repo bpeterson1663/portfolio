@@ -5,6 +5,7 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, 'styles')],
     },
+    reactStrictMode: true,
 }
 
 module.exports = nextConfig

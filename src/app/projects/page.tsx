@@ -37,6 +37,14 @@ export default function Page() {
       projectRepo: 'https://github.com/bpeterson1663/weather-ui',
       skillIds: [3, 23],
     },
+    {
+      id: '5',
+      title: 'Typing Test',
+      description: 'A Typing Test application',
+      skillIds: [],
+      imageUrl: '/static/typing-test.png',
+      url: "/projects/typing-test"
+    }
   ]
 
   return (
