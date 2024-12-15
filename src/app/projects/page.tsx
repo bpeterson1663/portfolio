@@ -41,9 +41,17 @@ export default function Page() {
       id: '5',
       title: 'Typing Test',
       description: 'A Typing Test application',
-      skillIds: [],
+      skillIds: [1, 2, 3],
       imageUrl: '/static/typing-test.png',
       url: "/projects/typing-test"
+    },
+    {
+      id: '6',
+      title: 'Discord Bot',
+      description: 'A Node.js discord bot that can display the weather for a location as well as other astronomical data.',
+      skillIds: [1, 7],
+      imageUrl: '/static/discord-bot.png',
+      url: "https://github.com/bpeterson1663/discord-bot"
     }
   ]
 
