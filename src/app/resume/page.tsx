@@ -196,29 +196,12 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles.section}>
-          <h3>The Salt Cellar</h3>
-          <div className={styles.header}>
-            <h4>Restaurant Manager</h4>
-            <span>January 2015 – June 2015</span>
-          </div>
-          <ul>
-            <li>
-              Demonstrated passion for fine dining by improving the guest’s dining experience, developing consistency
-              among service standards and constantly evaluating and improving staff performance.
-            </li>
-            <li>Analyzed opportunities to decrease labor cost by 10% to reach projected goals.</li>
-            <li>
-              Illustrated excellent organizational skills by maintaining and organizing a beverage inventory of $50,000
-              to keep liquor costs below projected goal of 20%.
-            </li>
-          </ul>
-        </div>
+  
         <div className={styles.section}>
           <h3>Interlachen Country Club</h3>
           <div className={styles.header}>
             <h4>Food and Beverage Manager</h4>
-            <span>July 2014 – January 2015</span>
+            <span>July 2014 – January 2016</span>
           </div>
           <ul>
             <li>
@@ -262,7 +245,7 @@ export default function Page() {
             <span>March 2021 – Present</span>
           </div>
           <ul>
-            <li>Complete Python Developer</li>
+            <li>Complete Node.js Developer in 2025</li>
             <li>Python for Business Data Analytics & Intelligence</li>
             <li>Typescript: The Complete Developer’s Guide</li>
             <li>Complete React Developer (with Redux, Hooks, GraphQL)</li>
