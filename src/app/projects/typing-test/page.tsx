@@ -5,7 +5,7 @@ import '@/app/projects/typing-test/typing-test.css'
 import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-export function TypingTest() {
+function Page() {
     const ONE_MINUTE = 60;
     const [longText, setLongText] = useState('');
     const [totalTyped, setTotalTyped] = useState('');
@@ -166,4 +166,4 @@ export function TypingTest() {
     );
 }
 
-export default dynamic(() => Promise.resolve(TypingTest), { ssr: false });
+export default dynamic(() => Promise.resolve(Page), { ssr: false });
