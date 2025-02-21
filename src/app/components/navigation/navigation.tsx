@@ -17,6 +17,9 @@ export default function Navigation() {
         <Link href="/contact" className={styles['nav-item']}>
           Contact Me
         </Link>
+        <Link href="/blog" className={styles['nav-item']}>
+          Blog
+        </Link>
       </div>
     </nav>
   )

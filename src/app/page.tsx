@@ -31,6 +31,11 @@ export default function Home() {
             Contact Me <span>-&gt;</span>
           </h2>
           <p>Send me a message.</p>
+        </Link><Link href="/blog" className={styles.card}>
+          <h2>
+            Blog <span>-&gt;</span>
+          </h2>
+          <p>My thoughts and opinions.</p>
         </Link>
       </div>
     </main>
