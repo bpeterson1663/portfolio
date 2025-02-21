@@ -1,0 +1,15 @@
+.post-container{
+    max-width: 800px;
+
+    h2 {
+        font-weight: 700;
+        font-family: var(--font-mono);
+    }
+
+    .post-content {
+
+        p {
+            margin: 32px 0;
+        }
+    }
+}
