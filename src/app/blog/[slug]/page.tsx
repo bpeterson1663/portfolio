@@ -7,15 +7,24 @@ import "./styles.scss"
 
 const postsDirectory = path.join(process.cwd(), "src/content/posts");
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
   const files = fs.readdirSync(postsDirectory);
   return files.map((filename) => ({
     slug: filename.replace(".md", ""),
   }));
 }
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const postFilePath = path.join(postsDirectory, `${params.slug}.md`);
+interface PageProps {
+  params: { slug: string };
+}
+
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const postFilePath = path.join(postsDirectory, `${slug}.md`);
   const fileContent = fs.readFileSync(postFilePath, "utf-8");
   const { data, content } = matter(fileContent);
   const processedContent = await remark().use(html).process(content);
