@@ -1,7 +1,6 @@
-import Grid from '../components/grid/grid'
 import { Project } from './model'
 import { ProjectCard } from './components/project-card'
-
+import { Grid } from "@mantine/core"
 export default function Page() {
   const PROJECTS: Project[] = [
     {
@@ -22,7 +21,7 @@ export default function Page() {
     },
     {
       id: '3',
-      title: 'Pyton Web Server',
+      title: 'Python Web Server',
       description: 'A protfolio project using python. Project uses Flask and use Python Anywhere to host the project.',
       imageUrl: '/static/python-web-server.png',
       url: 'https://bpeterson1663.pythonanywhere.com/',

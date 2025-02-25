@@ -1,4 +1,42 @@
-:root {
+
+body {
+  background-color: var(--mantine-color-dark-1); /* Background */
+  color: var(--mantine-color-dark-9); /* Primary text */
+  font-weight: 500;
+}
+
+a {
+  color: var(--mantine-color-accent-7); /* #00BFFF */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--mantine-color-accent-8); /* #33CCFF */
+}
+
+a:active {
+  color: var(--mantine-color-accent-6); /* #0096FF */
+}
+
+a:visited {
+  color: var(--mantine-color-accent-5); /* #007BFF */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+h1 {
+  width: 100%;
+}
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -21,6 +59,8 @@
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 0)
   );
+
+  
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -104,4 +144,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */

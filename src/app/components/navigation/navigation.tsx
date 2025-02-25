@@ -1,26 +1,45 @@
 import Link from 'next/link'
-import styles from './navigation.module.scss'
+import { Button } from '@mantine/core'
+
+import './navigation.css'
+
+const NAV_ITEMS = [
+  {
+    label: "Home",
+    url: "/"
+  },
+  {
+    label: "Resume",
+    url: "/resume"
+  },
+  {
+    label: "Projects",
+    url: "/projects"
+  },
+  {
+    label: "Blog",
+    url: "/blog"
+  }
+]
 
 export default function Navigation() {
+
   return (
-    <nav className={styles['nav-container']}>
-      <Link href="/" className={styles['nav-item']}>
-        Home
-      </Link>
-      <div className={styles['nav-list-container']}>
-        <Link href="/projects" className={styles['nav-item']}>
-          Projects
-        </Link>
-        <Link href="/resume" className={styles['nav-item']}>
-          Resume
-        </Link>
-        <Link href="/contact" className={styles['nav-item']}>
-          Contact Me
-        </Link>
-        <Link href="/blog" className={styles['nav-item']}>
-          Blog
-        </Link>
-      </div>
+    <nav className="nav-container">
+        {NAV_ITEMS.map((item) => (
+          <Button
+            className="nav-item"
+            component={Link}
+            key={item.label}
+            variant="filled"
+            size="md"
+            radius="sm"
+            href={item.url}
+          >
+            {item.label}
+          </Button>
+        ))}
     </nav>
   )
 }
+

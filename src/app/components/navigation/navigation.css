@@ -1,0 +1,12 @@
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+
+  .nav-item {
+      margin: 10px;
+      border: 1px solid var(--mantine-color-dark-3);
+      cursor: pointer; 
+  }
+}

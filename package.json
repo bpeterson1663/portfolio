@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
+    "@mantine/core": "^7.17.0",
+    "@mantine/hooks": "^7.17.0",
     "@types/node": "20.5.9",
     "@types/react": "npm:types-react@19.0.0-rc.1",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
@@ -27,6 +29,9 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "postcss": "^8.5.3",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
     "prettier": "3.0.3",
     "sass": "^1.69.5"
   },
