@@ -19,7 +19,6 @@
     "dayjs": "^1.11.10",
     "eslint": "8.48.0",
     "eslint-config-next": "15.0.3",
-    "firebase": "^10.5.2",
     "gray-matter": "^4.0.3",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
@@ -29,6 +28,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "esbuild": "^0.25.0",
     "postcss": "^8.5.3",
     "postcss-preset-mantine": "^1.17.0",
     "postcss-simple-vars": "^7.0.1",
