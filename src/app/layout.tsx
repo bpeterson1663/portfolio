@@ -48,10 +48,26 @@ export default function RootLayout({
           Button: {
             styles: (theme: MantineTheme) => ({
               root: {
-                color: theme.colors.dark[4],
+                color: theme.colors.dark[3],
               }
             })
           },
+          Card: {
+            styles: (theme: MantineTheme) => ({
+              root: {
+                backgroundColor: 'black',
+                color: theme.colors.dark[8]
+              }
+            })
+          },
+          Badge: {
+            styles: (theme: MantineTheme) => ({
+              root: {
+                backgroundColor: theme.colors.accent[5],
+                color: theme.colors.dark[8],
+              }
+            })
+          }
           // Card: {
           //   styles: (theme: MantineTheme) => ({
           //     root: {

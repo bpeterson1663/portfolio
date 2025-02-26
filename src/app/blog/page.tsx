@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import {type Post} from "../lib/types"
-import Card from "../components/card/card";
+import {Card} from "@mantine/core";
 
 const postsDirectory = path.join(process.cwd(), "src/content/posts");
 

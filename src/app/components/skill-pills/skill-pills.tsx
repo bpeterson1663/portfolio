@@ -1,6 +1,8 @@
 import { Skill } from '@/app/components/skill-pills/skills'
+import { Badge } from "@mantine/core"
 import Link from 'next/link'
-import styles from '@/app/components/skill-pills/skill-pills.module.scss'
+
+import '@/app/components/skill-pills/skill-pills.scss'
 
 interface Props {
   skills: Skill[]
@@ -8,12 +10,12 @@ interface Props {
 
 export default function SkillPills({ skills }: Props) {
   return (
-    <div className={styles['skill-container']}>
+    <div className="skill-container">
       {skills.map((skill) => {
         return (
-          <Link key={skill.id} target="_blank" className={styles['skill']} href={skill.url}>
+          <Badge className="skill" component={Link} key={skill.id} target="_blank"  href={skill.url}>
             {skill.name}
-          </Link>
+          </Badge>
         )
       })}
     </div>

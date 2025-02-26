@@ -3,7 +3,7 @@ import PageLayout from '../components/page-layout/page-layout'
 
 export default function BlogLayout({ children }: PropsWithChildren) {
   return (
-    <PageLayout title="Blog" subtitle="My thoughts and opinions">
+    <PageLayout title="Blog">
       {children}
     </PageLayout>
   )

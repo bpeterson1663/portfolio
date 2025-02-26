@@ -1,0 +1,19 @@
+.project-card {
+    max-width: 400px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 8px;
+    }
+
+    .link {
+        margin-top: 8px;
+        text-decoration: underline;
+    }
+
+    img {
+        margin-top: 8px;
+    }
+}

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Button } from '@mantine/core'
 
-import './navigation.css'
+import './navigation.scss'
 
 const NAV_ITEMS = [
   {
