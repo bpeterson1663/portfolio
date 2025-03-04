@@ -1,11 +1,13 @@
 'use client'
-import type { Metadata } from 'next'
-import { Button, Card, ColorSchemeScript, MantineProvider, MantineTheme, createTheme, mantineHtmlProps } from '@mantine/core';
+
+import { useMemo } from 'react';
+
+import { ColorSchemeScript, MantineProvider, MantineTheme, createTheme, mantineHtmlProps } from '@mantine/core';
+import Navigation from './components/navigation/navigation';
 
 import '@mantine/core/styles.css';
 import './globals.css'
-import Navigation from './components/navigation/navigation';
-import { useMemo } from 'react';
+
 
 export default function RootLayout({
   children,
@@ -42,7 +44,7 @@ export default function RootLayout({
             '#66D9FF',
           ],
         },
-        primaryColor: 'accent', // Sets the default primary color
+        primaryColor: 'accent', 
         defaultRadius: 'md',
         components: {
           Button: {
@@ -67,25 +69,10 @@ export default function RootLayout({
                 color: theme.colors.dark[8],
               }
             })
-          }
-          // Card: {
-          //   styles: (theme: MantineTheme) => ({
-          //     root: {
-          //       borderRadius: theme.radius.md, // Custom border-radius
-          //       boxShadow: theme.shadows.sm, // Custom shadow
-          //       padding: theme.spacing.md, // Custom padding
-          //       backgroundColor: theme.colors.dark[0], // Light background color
-          //       transition: 'all 0.3s ease', // Smooth transition for hover effect
-          //       '&:hover': {
-          //         backgroundColor: theme.colors.gray[1], // Background color on hover
-          //         boxShadow: theme.shadows.md, // Stronger shadow on hover
-          //       },
-          //     },
-          //   }),
-          // },
+          },
         },
       }),
-    [] // Ensure theme is created only once
+    []
   );
 
   return (

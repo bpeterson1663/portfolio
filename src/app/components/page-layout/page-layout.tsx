@@ -1,6 +1,5 @@
 import { PropsWithChildren } from 'react'
-import Navigation from '../navigation/navigation'
-import "./page-layout.css"
+import "./page-layout.scss"
 
 interface Props {
   title: string
