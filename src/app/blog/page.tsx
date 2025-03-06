@@ -3,8 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 import Link from "next/link";
 import {type Post} from "../lib/types"
-import {Card} from "@mantine/core";
-
+import {Card, Group} from "@mantine/core";
+import dayjs from 'dayjs'
 const postsDirectory = path.join(process.cwd(), "src/content/posts");
 
 export default function BlogPage() {
@@ -20,18 +20,16 @@ export default function BlogPage() {
   });
 
   return (
-    <div>
-      <ul>
+      <Group>
         {posts.map(({ slug, title, date, excerpt }) => (
-          <Card key={slug}>
+          <Card key={slug} m={32} maw={300}>
             <Link href={`/blog/${slug}`}>
               <h2>{title}</h2>
               <p>{excerpt}</p>
             </Link>
-            <p>{date}</p>
+            <p>{dayjs(date).format("MMM DD, YYYY")}</p>
           </Card>
         ))}
-      </ul>
-    </div>
+      </Group>
   );
 }

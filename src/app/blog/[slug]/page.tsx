@@ -3,6 +3,8 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import dayjs from 'dayjs';
+
 import "./styles.scss"
 
 const postsDirectory = path.join(process.cwd(), "src/content/posts");
@@ -12,10 +14,6 @@ export async function generateStaticParams(): Promise<Array<{ slug: string }>> {
   return files.map((filename) => ({
     slug: filename.replace(".md", ""),
   }));
-}
-
-interface PageProps {
-  params: { slug: string };
 }
 
 export default async function BlogPost({
@@ -33,7 +31,7 @@ export default async function BlogPost({
   return (
       <article className="post-container">
         <h2>{data.title}</h2>
-        <span>{data.date}</span>
+        <span>{dayjs(data.date).format("MMM DD, YYYY")}</span>
         <div className="post-content" dangerouslySetInnerHTML={{ __html: postHtml }} />
       </article>
   );
