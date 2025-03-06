@@ -3,7 +3,7 @@ import PageLayout from '../components/page-layout/page-layout'
 
 export default function ContactLayout({ children }: PropsWithChildren) {
   return (
-    <PageLayout title="Contact Me" subtitle="Send me a message">
+    <PageLayout title="Contact Me">
       {children}
     </PageLayout>
   )

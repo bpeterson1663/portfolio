@@ -18,12 +18,17 @@
         .section {
             margin: 10px;
             padding: 10px;
+
+            ul {
+                padding: 0;
+            }
             
             .header {
                 margin-top: 10px;
                 margin-bottom: 5px;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
             }
         }
     }

@@ -1,7 +1,8 @@
 'use client'
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
-import style from './page.module.scss'
+import './page.scss'
+import { Button, Textarea, TextInput } from '@mantine/core'
 
 type Status = 'idle' | 'success' | 'error'
 
@@ -30,20 +31,17 @@ export default function Page() {
   }
 
   return (
-    <div className={style.container}>
+    <div className="container">
       {status == 'success' && <h3>Thanks for reaching out! I will be in touch shortly.</h3>}
       {status == 'error' && <h3>Something went wrong sending the email. Please try again later</h3>}
-      <form ref={form} className={style['contact-form']} method="POST" onSubmit={handleSubmit}>
-        <label htmlFor="name">Your Name</label>
-        <input type="text" name="name" id="name" />
+      <form ref={form} className="contact-form" method="POST" onSubmit={handleSubmit}>
+        <TextInput label="Your Name" type="text" name="name" id="name" />
 
-        <label htmlFor="email">Your Email</label>
-        <input type="email" name="email" id="email" />
+        <TextInput label="Your Email" type="email" name="email" id="email" />
 
-        <label htmlFor="message">Message</label>
-        <textarea rows={4} name="message" id="message" />
+        <Textarea label="Message" rows={4} name="message" id="message" />
 
-        <button disabled={disabled} type="submit">Send</button>
+        <Button disabled={disabled} type="submit">Send</Button>
       </form>
     </div>
   )

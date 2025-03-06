@@ -1,28 +1,28 @@
 import Link from 'next/link'
-import styles from './resume.module.scss'
 import { SKILLS } from '../components/skill-pills/skills'
 import SkillPills from '../components/skill-pills/skill-pills'
+import './resume.scss'
 
 export default function Page() {
   return (
-    <div className={styles.resume}>
-      <div className={styles['section-container']}>
-        <div className={styles['contact-info']}>
+    <div className="resume">
+      <div className="section-contaienr">
+        <div className="contact-infor">
           <h2>Brady J. Peterson</h2>
-          <Link className={styles.link} target="_blank" href="https://github.com/bpeterson1663">
+          <Link className="link" target="_blank" href="https://github.com/bpeterson1663">
             Github
           </Link>
         </div>
       </div>
-      <div className={styles['section-container']}>
+      <div className="section-container">
         <h2>Technical Skills</h2>
         <SkillPills skills={SKILLS} />
       </div>
-      <div className={styles['section-container']}>
+      <div className="section-container">
         <h2>Experience</h2>
-        <div className={styles.section}>
+        <div className="section">
           <h3>When I Work</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Senior Full Stack Engineer</h4>
             <span>October 2023 – Present</span>
           </div>
@@ -54,7 +54,7 @@ export default function Page() {
               <strong>Technologies Used:</strong> React, TypeScript, PHP, Golang, React Testing Library
             </li>
           </ul>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Full Stack Engineer</h4>
             <span>August 2021 – October 2023</span>
           </div>
@@ -78,9 +78,9 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles.section}>
+        <div className="section">
           <h3>Calabrio</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Software Engineer – UI</h4>
             <span>January 2019 – August 2021</span>
           </div>
@@ -115,7 +115,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <div className={styles.header}>
+          <div className="header">
             <h4>Associate Software Engineer – UI</h4>
             <span>July 2017 – January 2019</span>
           </div>
@@ -137,9 +137,9 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles.section}>
+        <div className="section">
           <h3>Fourcubed</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Front End Developer/Contractor</h4>
             <span>July 2016 – January 2018</span>
           </div>
@@ -167,9 +167,9 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles.section}>
+        <div className="section">
           <h3>Prime Digital Academy</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Full Stack Software Development Student</h4>
             <span>January 2016 – May 2016</span>
           </div>
@@ -197,9 +197,9 @@ export default function Page() {
           </ul>
         </div>
   
-        <div className={styles.section}>
+        <div className="section">
           <h3>Interlachen Country Club</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Food and Beverage Manager</h4>
             <span>July 2014 – January 2016</span>
           </div>
@@ -218,7 +218,7 @@ export default function Page() {
             </li>
           </ul>
 
-          <div className={styles.header}>
+          <div className="header">
             <h4>Beverage Manager and Server</h4>
             <span>May 2011 – June 2014</span>
           </div>
@@ -236,12 +236,12 @@ export default function Page() {
         </div>
       </div>
 
-      <div className={styles['section-container']}>
+      <div className="section-container">
         <h2>Education</h2>
-        <div className={styles.section}>
+        <div className="section">
           <h3>Continuing Self-Learning</h3>
-          <div className={styles.header}>
-            <h4>Online Learning – http://www.zerotomastery.io</h4>
+          <div className="header">
+            <h4>Online Learning – <Link href="https://zerotomastery.io">Zero to Mastery </Link></h4>
             <span>March 2021 – Present</span>
           </div>
           <ul>
@@ -251,9 +251,9 @@ export default function Page() {
             <li>Complete React Developer (with Redux, Hooks, GraphQL)</li>
           </ul>
         </div>
-        <div className={styles.section}>
+        <div className="section">
           <h3>Prime Digital Academy</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Full-Stack Software Engineering Certification</h4>
             <span>January 2016 – May 2016</span>
           </div>
@@ -268,9 +268,9 @@ export default function Page() {
             </li>
           </ul>
         </div>
-        <div className={styles.section}>
+        <div className="section">
           <h3>University of Wisconsin - Stout</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Bachelor of Science in Golf Enterprise Management</h4> <span>September 2008 – May 2011</span>
           </div>
           <ul>
@@ -278,9 +278,9 @@ export default function Page() {
             <li>Magna Cum Laude-GPA: 3.8</li>
           </ul>
         </div>
-        <div className={styles.section}>
+        <div className="section">
           <h3>Milwaukee School of Engineering</h3>
-          <div className={styles.header}>
+          <div className="header">
             <h4>Generals - Management Information Systems</h4>
             <span>September 2007 – May 2008</span>
           </div>
