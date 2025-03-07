@@ -6,7 +6,7 @@ import { ColorSchemeScript, MantineProvider, MantineTheme, createTheme, mantineH
 import Navigation from './components/navigation/navigation';
 
 import '@mantine/core/styles.css';
-import './globals.css'
+import './globals.scss'
 
 export default function RootLayout({
   children,
